@@ -5,7 +5,7 @@ This repository hosts the compiled production build of the official website and 
 ---
 
 ### 🔒 Source Code
-For security and IP protection, the source code of the desktop application (Python/Flet) and the raw source files of the website (VitePress) are hosted in a private repository.
+For security and intellectual property protection, the source code of the desktop application (Python/Flet) and the raw source files of the website (VitePress) are hosted in a private repository.
 
 ---
 
