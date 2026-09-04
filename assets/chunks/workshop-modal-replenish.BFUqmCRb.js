@@ -1,0 +1,1 @@
+const o="/ru/img-docs/workshop-main.webp",s="/ru/img-docs/workshop-modal-add.webp",r="/ru/img-docs/workshop-asset-card.webp",p="/ru/img-docs/workshop-modal-revaluation.webp",a="/ru/img-docs/workshop-modal-replenish.webp";export{o as _,s as a,r as b,p as c,a as d};
