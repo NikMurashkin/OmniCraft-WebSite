@@ -1,0 +1,225 @@
+<svg width="220" height="220" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Многослойные неоновые фильтры -->
+    <filter id="neonBlur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="microGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <!-- Фоновые ауры -->
+    <radialGradient id="hubAura" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.32"/>
+      <stop offset="45%" stop-color="#8B5CF6" stop-opacity="0.18"/>
+      <stop offset="75%" stop-color="#10B981" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#3B82F6" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Фирменные градиенты модулей и ядра -->
+    <linearGradient id="modBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#93C5FD"/>
+      <stop offset="40%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#1D4ED8"/>
+    </linearGradient>
+
+    <linearGradient id="modPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E879F9"/>
+      <stop offset="45%" stop-color="#A855F7"/>
+      <stop offset="100%" stop-color="#6B21A8"/>
+    </linearGradient>
+
+    <linearGradient id="modAmber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE68A"/>
+      <stop offset="45%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#B45309"/>
+    </linearGradient>
+
+    <linearGradient id="modCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#67E8F9"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+
+    <linearGradient id="brassTrim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE68A"/>
+      <stop offset="50%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#B45309"/>
+    </linearGradient>
+
+    <linearGradient id="coreMetal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="60%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 1. Фоновая магическая аура -->
+  <circle cx="120" cy="120" r="108" fill="url(#hubAura)"/>
+
+  <!-- Орбитальные технологические кольца и сетка координат -->
+  <circle cx="120" cy="120" r="106" stroke="#38BDF8" stroke-opacity="0.16" stroke-dasharray="3 7" stroke-width="1"/>
+  <circle cx="120" cy="120" r="88" stroke="#A855F7" stroke-opacity="0.14" stroke-dasharray="1 5" stroke-width="1"/>
+  <circle cx="120" cy="120" r="74" stroke="#F59E0B" stroke-opacity="0.12" stroke-dasharray="2 6" stroke-width="0.8"/>
+
+  <!-- Кардинальные метки-перекрестия (Optical crosshairs) -->
+  <path d="M120 10 V16 M120 224 V230 M10 120 H16 M224 120 H230" stroke="#38BDF8" stroke-width="1" stroke-opacity="0.4"/>
+  <path d="M42 42 L46 46 M198 42 L194 46 M42 198 L46 194 M198 198 L194 194" stroke="#A855F7" stroke-width="0.8" stroke-opacity="0.3"/>
+
+  <!-- Парящие крафтовые искры и дата-узлы (Floating Craft Sparks) -->
+  <path d="M46 42 L47.5 46.5 C47.8 47.3 48.4 47.8 49.2 48.2 L53.5 49.5 L49.2 50.8 C48.4 51.2 47.8 51.7 47.5 52.5 L46 57 L44.5 52.5 C44.2 51.7 43.6 51.2 42.8 50.8 L38.5 49.5 L42.8 48.2 C43.6 47.8 44.2 47.3 44.5 46.5 Z" fill="#FBBF24" filter="url(#microGlow)"/>
+  <circle cx="46" cy="49.5" r="1" fill="#FFFFFF"/>
+
+  <path d="M194 56 L195.2 59.8 C195.5 60.5 196 61 196.7 61.3 L200.5 62.5 L196.7 63.7 C196 64 195.5 64.5 195.2 65.2 L194 69 L192.8 65.2 C192.5 64.5 192 64 191.3 63.7 L187.5 62.5 L191.3 61.3 C192 61 192.5 60.5 192.8 59.8 Z" fill="#E879F9" filter="url(#microGlow)"/>
+  <circle cx="194" cy="62.5" r="0.8" fill="#FFFFFF"/>
+
+  <!-- Фоновые узлы сигналов с микро-аурой -->
+  <circle cx="36" cy="180" r="2.5" fill="#67E8F9" filter="url(#microGlow)"/>
+  <path d="M36 174 V186 M30 180 H42" stroke="#67E8F9" stroke-width="0.8" stroke-opacity="0.5"/>
+  <circle cx="204" cy="182" r="2" fill="#10B981" filter="url(#microGlow)"/>
+  <circle cx="208" cy="116" r="1.5" fill="#FBBF24" opacity="0.8"/>
+  <circle cx="32" cy="116" r="1.5" fill="#A78BFA" opacity="0.8"/>
+  <circle cx="120" cy="204" r="1.5" fill="#38BDF8" opacity="0.7"/>
+
+  <!-- Парящая платформа-подставка дока (Base Pedestal) -->
+  <ellipse cx="120" cy="223" rx="56" ry="9" fill="#0B132B" fill-opacity="0.6"/>
+  <ellipse cx="120" cy="221" rx="44" ry="6" fill="url(#modBlue)" fill-opacity="0.2" filter="url(#softGlow)"/>
+  <ellipse cx="120" cy="220" rx="34" ry="3.5" stroke="#38BDF8" stroke-width="1.2" stroke-opacity="0.7"/>
+
+  <!-- 2. Стыковочные направляющие и шины передачи данных (Docking Laser Tracks) -->
+  <!-- К верхнему модулю -->
+  <path d="M112 70 L112 44 M128 70 L128 44" stroke="url(#modPurple)" stroke-width="1.2" stroke-dasharray="3 2" stroke-opacity="0.6"/>
+  <path d="M120 70 L120 40" stroke="#E879F9" stroke-width="2.2" stroke-linecap="round" filter="url(#microGlow)"/>
+  <circle cx="120" cy="54" r="2" fill="#FFFFFF"/>
+
+  <!-- К левому нижнему модулю -->
+  <path d="M80 140 L66 150 M88 147 L74 157" stroke="url(#modBlue)" stroke-width="1.2" stroke-dasharray="3 2" stroke-opacity="0.6"/>
+  <path d="M84 143 L70 153" stroke="#67E8F9" stroke-width="2.2" stroke-linecap="round" filter="url(#microGlow)"/>
+  <circle cx="77" cy="148" r="2" fill="#FFFFFF"/>
+
+  <!-- К правому нижнему модулю -->
+  <path d="M160 140 L174 150 M152 147 L166 157" stroke="url(#modAmber)" stroke-width="1.2" stroke-dasharray="3 2" stroke-opacity="0.6"/>
+  <path d="M156 143 L170 153" stroke="#FBBF24" stroke-width="2.2" stroke-linecap="round" filter="url(#microGlow)"/>
+  <circle cx="163" cy="148" r="2" fill="#FFFFFF"/>
+
+  <!-- 3. Центральное ядро платформы (OmniCraft Core Hub) -->
+  <!-- Внешний защитный фланец с фасками -->
+  <path d="M120 62 L172 92 L172 152 L120 182 L68 152 L68 92 Z" fill="#090D1A" stroke="url(#modBlue)" stroke-width="1.2" stroke-opacity="0.45"/>
+
+  <!-- Угловые фиксаторы стыковки (Docking clamps) на 6 вершинах фланца -->
+  <path d="M116 64 L124 64 M68 95 L72 88 M172 95 L168 88 M172 149 L168 156 M68 149 L72 156 M116 180 L124 180" stroke="url(#brassTrim)" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Основная силовая гексагональная плита ядра -->
+  <path d="M120 70 L165 95 L165 145 L120 170 L75 145 L75 95 Z" fill="url(#coreMetal)" stroke="url(#modBlue)" stroke-width="2.6" stroke-linejoin="round"/>
+
+  <!-- Внутренняя кольцевая шина передачи данных (Data Bus Loop) -->
+  <path d="M120 82 L153 100 L153 140 L120 158 L87 140 L87 100 Z" fill="none" stroke="#38BDF8" stroke-width="1" stroke-dasharray="3 3" stroke-opacity="0.65"/>
+
+  <!-- Стыковочные контактные колодки на портах ядра (Золотые пины) -->
+  <!-- Верхний порт ядра -->
+  <rect x="111" y="68" width="18" height="4" rx="1" fill="url(#brassTrim)"/>
+  <line x1="115" y1="72" x2="115" y2="76" stroke="#FDE68A" stroke-width="1.2"/>
+  <line x1="120" y1="72" x2="120" y2="76" stroke="#FDE68A" stroke-width="1.2"/>
+  <line x1="125" y1="72" x2="125" y2="76" stroke="#FDE68A" stroke-width="1.2"/>
+
+  <!-- Левый нижний порт ядра -->
+  <rect x="73" y="142" width="16" height="4" rx="1" transform="rotate(30 73 142)" fill="url(#brassTrim)"/>
+
+  <!-- Правый нижний порт ядра -->
+  <rect x="151" y="150" width="16" height="4" rx="1" transform="rotate(-30 151 150)" fill="url(#brassTrim)"/>
+
+  <!-- Центральный оптико-квантовый процессор ядра (Nexus Engine) -->
+  <circle cx="120" cy="120" r="23" fill="#0A0F1D" stroke="url(#modBlue)" stroke-width="1.4"/>
+  <circle cx="120" cy="120" r="17" fill="#0F172A" stroke="url(#brassTrim)" stroke-width="1.8"/>
+  <circle cx="120" cy="120" r="12" fill="url(#modCyan)" filter="url(#neonBlur)"/>
+  <circle cx="120" cy="120" r="5" fill="#FFFFFF"/>
+  <circle cx="120" cy="120" r="14" stroke="#38BDF8" stroke-width="1.2" stroke-dasharray="2 3"/>
+
+  <!-- Статусные диоды ядра (Online / Sync / Agent / Data) -->
+  <circle cx="106" cy="106" r="2.2" fill="#10B981" filter="url(#microGlow)"/>
+  <circle cx="134" cy="106" r="2.2" fill="#38BDF8" filter="url(#microGlow)"/>
+  <circle cx="106" cy="134" r="2.2" fill="#A855F7" filter="url(#microGlow)"/>
+  <circle cx="134" cy="134" r="2.2" fill="#F59E0B" filter="url(#microGlow)"/>
+
+  <!-- 4. Три детализированных сменных картриджа (Hot-Plug Modules) -->
+
+  <!-- МОДУЛЬ 1: ВЕРХНИЙ (Фиолетовый — «Разработка под ремесло мастера») -->
+  <g id="moduleTop">
+    <!-- Трапециевидный промышленный корпус с фасками -->
+    <path d="M85 8 L155 8 L165 34 L75 34 Z" fill="url(#coreMetal)" stroke="url(#modPurple)" stroke-width="2.4" stroke-linejoin="round"/>
+
+    <!-- Внутренняя экранированная панель картриджа -->
+    <path d="M90 12 L150 12 L158 30 L82 30 Z" fill="#1E293B" fill-opacity="0.65"/>
+
+    <!-- Контактная интерфейсная гребенка (Штекер к ядру) -->
+    <rect x="110" y="34" width="20" height="5" rx="1" fill="url(#brassTrim)"/>
+    <line x1="114" y1="39" x2="114" y2="43" stroke="#FDE68A" stroke-width="1.5"/>
+    <line x1="120" y1="39" x2="120" y2="43" stroke="#FDE68A" stroke-width="1.5"/>
+    <line x1="126" y1="39" x2="126" y2="43" stroke="#FDE68A" stroke-width="1.5"/>
+
+    <!-- Центральный светящийся глиф (+) с ореолом -->
+    <circle cx="120" cy="21" r="8.5" fill="#0F172A" stroke="url(#modPurple)" stroke-width="1.6"/>
+    <path d="M114.5 21 H125.5 M120 15.5 V26.5" stroke="#E879F9" stroke-width="2.4" stroke-linecap="round" filter="url(#microGlow)"/>
+    <circle cx="120" cy="21" r="1.2" fill="#FFFFFF"/>
+
+    <!-- Дорожки печатной платы на крыльях картриджа -->
+    <path d="M92 21 H105 M135 21 H148" stroke="#C084FC" stroke-width="1" stroke-linecap="round" stroke-dasharray="2 2"/>
+    <circle cx="92" cy="21" r="1.4" fill="#E879F9"/>
+    <circle cx="148" cy="21" r="1.4" fill="#E879F9"/>
+
+    <!-- Светодиод готовности модуля -->
+    <circle cx="152" cy="14" r="1.4" fill="#10B981" filter="url(#microGlow)"/>
+  </g>
+
+  <!-- МОДУЛЬ 2: ЛЕВЫЙ НИЖНИЙ (Лазурный — «Открытый API / Код / Python») -->
+  <g id="moduleBottomLeft">
+    <!-- Угловой бронированный корпус картриджа -->
+    <path d="M72 133 L38 153 L47 192 L91 178 Z" fill="url(#coreMetal)" stroke="url(#modBlue)" stroke-width="2.4" stroke-linejoin="round"/>
+
+    <!-- Внутренняя панель -->
+    <path d="M68 138 L42 154 L49 185 L84 174 Z" fill="#1E293B" fill-opacity="0.65"/>
+
+    <!-- Стыковочный коннектор к порту -->
+    <rect x="71" y="131" width="16" height="5" rx="1" transform="rotate(30 71 131)" fill="url(#brassTrim)"/>
+
+    <!-- Неоновый шеврон кода </> -->
+    <path d="M54 161 L48 167 L54 173" stroke="#67E8F9" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" filter="url(#microGlow)"/>
+    <path d="M68 161 L74 167 L68 173" stroke="#67E8F9" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" filter="url(#microGlow)"/>
+    <line x1="63.5" y1="160" x2="58.5" y2="174" stroke="url(#brassTrim)" stroke-width="1.8" stroke-linecap="round"/>
+
+    <!-- Шины ввода-вывода и индикаторы -->
+    <path d="M43 172 L46 177 M76 161 L80 166" stroke="#38BDF8" stroke-width="1"/>
+    <circle cx="47" cy="182" r="1.4" fill="#38BDF8" filter="url(#microGlow)"/>
+    <circle cx="53" cy="185" r="1.2" fill="#10B981"/>
+  </g>
+
+  <!-- МОДУЛЬ 3: ПРАВЫЙ НИЖНИЙ (Янтарный — «Ремесло / Механика / Калькулятор») -->
+  <g id="moduleBottomRight">
+    <!-- Угловой прецизионный корпус картриджа -->
+    <path d="M168 133 L149 178 L193 192 L202 153 Z" fill="url(#coreMetal)" stroke="url(#modAmber)" stroke-width="2.4" stroke-linejoin="round"/>
+
+    <!-- Внутренняя панель -->
+    <path d="M172 138 L156 174 L191 185 L198 154 Z" fill="#1E293B" fill-opacity="0.65"/>
+
+    <!-- Стыковочный коннектор к порту -->
+    <rect x="153" y="139" width="16" height="5" rx="1" transform="rotate(-30 153 139)" fill="url(#brassTrim)"/>
+
+    <!-- Прецизионный часовой зубчатый калибр ремесленника (Sun Gear) -->
+    <circle cx="177" cy="167" r="10" stroke="url(#modAmber)" stroke-width="2" stroke-dasharray="4 3" stroke-linecap="round"/>
+    <circle cx="177" cy="167" r="6" fill="#0F172A" stroke="url(#brassTrim)" stroke-width="1.5"/>
+    <circle cx="177" cy="167" r="2.8" fill="url(#modAmber)" filter="url(#microGlow)"/>
+    <circle cx="177" cy="167" r="1" fill="#FFFFFF"/>
+
+    <!-- Риски микрометра и деления прецизионной шкалы -->
+    <path d="M187 153 L191 155 M189 158 L194 161 M189 164 L195 168 M186 171 L192 175 M181 177 L185 182" stroke="#FDE68A" stroke-width="1.2" stroke-linecap="round"/>
+
+    <!-- Светодиоды статуса и калибровки -->
+    <circle cx="193" cy="182" r="1.4" fill="#A855F7" filter="url(#microGlow)"/>
+    <circle cx="187" cy="185" r="1.2" fill="#FBBF24"/>
+  </g>
+</svg>

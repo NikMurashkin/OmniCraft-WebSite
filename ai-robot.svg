@@ -1,0 +1,147 @@
+<svg width="220" height="220" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Фоновое магическое свечение -->
+    <radialGradient id="aiGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.35"/>
+      <stop offset="60%" stop-color="#3B82F6" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#3B82F6" stop-opacity="0"/>
+    </radialGradient>
+    
+    <!-- Градиенты корпуса робота -->
+    <linearGradient id="bodyMetal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="50%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+
+    <linearGradient id="headMetal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#475569"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+
+    <linearGradient id="brassTrim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE68A"/>
+      <stop offset="40%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#B45309"/>
+    </linearGradient>
+
+    <linearGradient id="magicViolet" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C084FC"/>
+      <stop offset="50%" stop-color="#A855F7"/>
+      <stop offset="100%" stop-color="#7E22CE"/>
+    </linearGradient>
+
+    <linearGradient id="magicCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#67E8F9"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+
+    <linearGradient id="visorScreen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+
+    <!-- Фильтр неонового свечения -->
+    <filter id="neonBlur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- 1. Фоновая магическая аура -->
+  <circle cx="110" cy="110" r="96" fill="url(#aiGlow)"/>
+  
+  <!-- Орбитальные технологические кольца и созвездия расчетов -->
+  <circle cx="110" cy="110" r="92" stroke="#8B5CF6" stroke-opacity="0.25" stroke-dasharray="4 6" stroke-width="1.5"/>
+  <circle cx="110" cy="110" r="76" stroke="#38BDF8" stroke-opacity="0.2" stroke-dasharray="2 8" stroke-width="1"/>
+  
+  <!-- Парящие искры и магические крафтовые звёзды -->
+  <path d="M42 45 L44 51 L50 53 L44 55 L42 61 L40 55 L34 53 L40 51 Z" fill="#FBBF24" filter="url(#neonBlur)"/>
+  <circle cx="176" cy="48" r="3" fill="#67E8F9" filter="url(#neonBlur)"/>
+  <path d="M176 38 V58 M166 48 H186" stroke="#67E8F9" stroke-width="1" stroke-opacity="0.6"/>
+  <path d="M188 124 L189.5 128 L194 129.5 L189.5 131 L188 135 L186.5 131 L182 129.5 L186.5 128 Z" fill="#C084FC"/>
+  <circle cx="36" cy="142" r="2.5" fill="#FBBF24" filter="url(#neonBlur)"/>
+  <circle cx="68" cy="30" r="1.5" fill="#A78BFA" opacity="0.8"/>
+  <circle cx="152" cy="28" r="1.5" fill="#38BDF8" opacity="0.8"/>
+  <circle cx="182" cy="88" r="1.5" fill="#FBBF24" opacity="0.7"/>
+  <circle cx="32" cy="98" r="1.5" fill="#67E8F9" opacity="0.7"/>
+
+  <!-- 2. Парящая платформа-подставка (Верстачный пьедестал) -->
+  <ellipse cx="110" cy="186" rx="46" ry="10" fill="#0F172A" fill-opacity="0.6"/>
+  <ellipse cx="110" cy="184" rx="38" ry="7" fill="url(#magicViolet)" fill-opacity="0.3" filter="url(#softGlow)"/>
+  <ellipse cx="110" cy="183" rx="34" ry="5" stroke="#38BDF8" stroke-width="1.5" stroke-opacity="0.8"/>
+
+  <!-- 3. Руки и ремесленные манипуляторы робота -->
+  <!-- Левая рука (держит волшебное ремесленное стило / кристалл) -->
+  <path d="M68 118 C58 122 52 134 56 144 C58 148 64 150 70 146" stroke="#475569" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <circle cx="70" cy="146" r="6" fill="url(#brassTrim)"/>
+  <path d="M68 144 L50 130" stroke="url(#brassTrim)" stroke-width="3.5" stroke-linecap="round"/>
+  <polygon points="46,126 53,130 49,137 42,133" fill="url(#magicCyan)" filter="url(#neonBlur)"/>
+  <circle cx="47" cy="131" r="2" fill="#FFFFFF"/>
+  <path d="M47 122 V124 M47 138 V140 M38 131 H40 M54 131 H56" stroke="#67E8F9" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Правая рука (согнута в приветственном жесте мастера) -->
+  <path d="M152 118 C162 122 170 130 168 140 C166 146 160 148 154 144" stroke="#475569" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <circle cx="154" cy="144" r="6" fill="url(#brassTrim)"/>
+  <path d="M154 144 C150 142 148 137 151 133" stroke="url(#brassTrim)" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M156 146 C158 149 162 150 165 147" stroke="url(#brassTrim)" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <circle cx="152" cy="133" r="2" fill="#FBBF24" filter="url(#neonBlur)"/>
+
+  <!-- 4. Корпус робота (Торс с датчиками и реактором) -->
+  <rect x="74" y="104" width="72" height="62" rx="18" fill="url(#bodyMetal)" stroke="#475569" stroke-width="2"/>
+  <path d="M84 110 H136" stroke="url(#brassTrim)" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Центральный квантово-магический реактор (Сердце мастера) -->
+  <circle cx="110" cy="135" r="15" fill="#0F172A" stroke="url(#brassTrim)" stroke-width="2"/>
+  <circle cx="110" cy="135" r="10" fill="url(#magicViolet)" filter="url(#neonBlur)"/>
+  <circle cx="110" cy="135" r="5" fill="#FFFFFF"/>
+  <circle cx="110" cy="135" r="12" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="3 3"/>
+
+  <!-- Нижние технологические индикаторы / тумблеры -->
+  <circle cx="90" cy="154" r="3" fill="#10B981" filter="url(#neonBlur)"/>
+  <circle cx="100" cy="154" r="3" fill="#38BDF8"/>
+  <circle cx="120" cy="154" r="3" fill="#F59E0B"/>
+  <circle cx="130" cy="154" r="3" fill="#A855F7"/>
+
+  <!-- 5. Шея робота с шарниром -->
+  <rect x="100" y="96" width="20" height="10" rx="3" fill="#334155" stroke="#475569" stroke-width="1.5"/>
+  <line x1="104" y1="101" x2="116" y2="101" stroke="url(#brassTrim)" stroke-width="1.5"/>
+
+  <!-- 6. Голова робота (Шлем мастера с антенной и визором) -->
+  <path d="M110 54 V42" stroke="url(#brassTrim)" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="110" cy="38" r="6" fill="url(#magicCyan)" filter="url(#neonBlur)"/>
+  <circle cx="110" cy="38" r="2.5" fill="#FFFFFF"/>
+  <path d="M102 34 C106 31 114 31 118 34" stroke="#67E8F9" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.8"/>
+  <path d="M98 28 C104 23 116 23 122 28" stroke="#A78BFA" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.6"/>
+
+  <!-- Уши-болты (ремесленные шарниры) -->
+  <rect x="62" y="68" width="8" height="18" rx="3" fill="url(#brassTrim)"/>
+  <rect x="150" y="68" width="8" height="18" rx="3" fill="url(#brassTrim)"/>
+  <circle cx="66" cy="77" r="2" fill="#1E293B"/>
+  <circle cx="154" cy="77" r="2" fill="#1E293B"/>
+
+  <!-- Основной шлем головы -->
+  <rect x="68" y="52" width="84" height="48" rx="16" fill="url(#headMetal)" stroke="#64748B" stroke-width="2"/>
+  <circle cx="76" cy="58" r="1.5" fill="#94A3B8"/>
+  <circle cx="144" cy="58" r="1.5" fill="#94A3B8"/>
+
+  <!-- Визор-экран с добрыми светящимися глазами -->
+  <rect x="75" y="61" width="70" height="30" rx="10" fill="url(#visorScreen)" stroke="url(#brassTrim)" stroke-width="1.5"/>
+  <path d="M87 75 C87 71 91 68 96 68 C101 68 105 71 105 75 C105 78 101 80 96 80 C91 80 87 78 87 75 Z" fill="url(#magicCyan)" filter="url(#neonBlur)"/>
+  <circle cx="94" cy="73" r="2.5" fill="#FFFFFF"/>
+
+  <path d="M115 75 C115 71 119 68 124 68 C129 68 133 71 133 75 C133 78 129 80 124 80 C119 80 115 78 115 75 Z" fill="url(#magicCyan)" filter="url(#neonBlur)"/>
+  <circle cx="122" cy="73" r="2.5" fill="#FFFFFF"/>
+
+  <!-- Дружелюбный румянец -->
+  <ellipse cx="85" cy="83" rx="3.5" ry="1.5" fill="#F472B6" opacity="0.6"/>
+  <ellipse cx="135" cy="83" rx="3.5" ry="1.5" fill="#F472B6" opacity="0.6"/>
+
+  <!-- Козырёк ремесленника -->
+  <path d="M72 56 C82 50 138 50 148 56" stroke="url(#brassTrim)" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+</svg>
