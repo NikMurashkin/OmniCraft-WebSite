@@ -1,0 +1,170 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="70%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#080C15"/>
+    </radialGradient>
+    <radialGradient id="warmLight" cx="50%" cy="30%" r="45%">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Leather Apron Gradient -->
+    <linearGradient id="leatherGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9A3412"/>
+      <stop offset="40%" stop-color="#78350F"/>
+      <stop offset="100%" stop-color="#451A03"/>
+    </linearGradient>
+
+    <!-- Brass / Gold Accents -->
+    <linearGradient id="brassGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE68A"/>
+      <stop offset="50%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#92400E"/>
+    </linearGradient>
+
+    <!-- Denim Shirt Gradient -->
+    <linearGradient id="shirtGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="60%" stop-color="#1D4ED8"/>
+      <stop offset="100%" stop-color="#1E3A8A"/>
+    </linearGradient>
+
+    <!-- Skin Tone Gradient -->
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FED7AA"/>
+      <stop offset="100%" stop-color="#FDBA74"/>
+    </linearGradient>
+
+    <!-- Hair and Beard Gradient -->
+    <linearGradient id="hairGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#451A03"/>
+      <stop offset="60%" stop-color="#291002"/>
+      <stop offset="100%" stop-color="#1A0A02"/>
+    </linearGradient>
+
+    <!-- Shadow filter -->
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="400" height="400" rx="28" fill="url(#bgGlow)"/>
+  <circle cx="200" cy="170" r="150" fill="url(#warmLight)"/>
+
+  <!-- Subtle Blueprint / Grid lines in background -->
+  <path d="M40 200 H360 M200 40 V360 M120 40 V360 M280 40 V360 M40 120 H360 M40 280 H360" stroke="#38BDF8" stroke-opacity="0.07" stroke-width="1" stroke-dasharray="4 4"/>
+  <circle cx="200" cy="180" r="140" stroke="#F59E0B" stroke-opacity="0.12" stroke-width="1.5" stroke-dasharray="2 6"/>
+
+  <!-- Character Group with Shadow -->
+  <g filter="url(#softShadow)">
+    <!-- Denim Shirt Shoulders -->
+    <path d="M100 370 C100 290 140 270 200 270 C260 270 300 290 300 370 Z" fill="url(#shirtGrad)"/>
+    <!-- Shirt Collar -->
+    <path d="M165 270 L200 305 L180 270 Z" fill="#1E3A8A"/>
+    <path d="M235 270 L200 305 L220 270 Z" fill="#172554"/>
+
+    <!-- Leather Craft Apron -->
+    <path d="M135 300 L145 380 H255 L265 300 C245 295 225 292 200 292 C175 292 155 295 135 300 Z" fill="url(#leatherGrad)"/>
+    <!-- Apron Leather Straps -->
+    <path d="M142 300 L160 270" stroke="#78350F" stroke-width="8" stroke-linecap="round"/>
+    <path d="M258 300 L240 270" stroke="#78350F" stroke-width="8" stroke-linecap="round"/>
+    <!-- Apron Rivets (Brass) -->
+    <circle cx="145" cy="305" r="4.5" fill="url(#brassGrad)"/>
+    <circle cx="255" cy="305" r="4.5" fill="url(#brassGrad)"/>
+    <!-- Apron Stitching lines -->
+    <path d="M148 315 V375 M252 315 V375" stroke="#FDE68A" stroke-opacity="0.5" stroke-width="1.5" stroke-dasharray="4 3"/>
+
+    <!-- Apron Chest Pocket -->
+    <path d="M175 330 H225 V370 C225 375 220 380 215 380 H185 C180 380 175 375 175 370 Z" fill="#451A03" stroke="#9A3412" stroke-width="1.5"/>
+    <circle cx="178" cy="333" r="2.5" fill="url(#brassGrad)"/>
+    <circle cx="222" cy="333" r="2.5" fill="url(#brassGrad)"/>
+    <!-- Awl / Ruler peaking out of pocket -->
+    <rect x="185" y="312" width="5" height="22" rx="1.5" fill="url(#brassGrad)" transform="rotate(-12 185 312)"/>
+    <path d="M210 308 L218 335 L214 336 L206 309 Z" fill="#94A3B8"/>
+
+    <!-- Neck -->
+    <rect x="182" y="240" width="36" height="40" rx="8" fill="#FDBA74"/>
+    <path d="M182 255 C192 265 208 265 218 255 V275 H182 Z" fill="#EA580C" fill-opacity="0.15"/>
+
+    <!-- Head and Face Shape -->
+    <ellipse cx="200" cy="180" rx="55" ry="68" fill="url(#skinGrad)"/>
+
+    <!-- Ears -->
+    <circle cx="145" cy="182" r="12" fill="#FDBA74"/>
+    <circle cx="145" cy="182" r="6" fill="#EA580C" fill-opacity="0.25"/>
+    <circle cx="255" cy="182" r="12" fill="#FDBA74"/>
+    <circle cx="255" cy="182" r="6" fill="#EA580C" fill-opacity="0.25"/>
+
+    <!-- Hair (Craftsman haircut) -->
+    <path d="M145 160 C140 110 170 100 200 100 C230 100 260 110 255 160 C250 135 240 120 200 120 C160 120 150 135 145 160 Z" fill="url(#hairGrad)"/>
+    <path d="M155 125 C175 105 215 105 245 120 C235 110 215 105 195 108 C175 110 160 118 155 125 Z" fill="#78350F" fill-opacity="0.3"/>
+
+    <!-- Eyes (Friendly, focused, warm) -->
+    <circle cx="180" cy="172" r="5" fill="#1E293B"/>
+    <circle cx="182" cy="170" r="1.8" fill="#FFFFFF"/>
+    <circle cx="220" cy="172" r="5" fill="#1E293B"/>
+    <circle cx="222" cy="170" r="1.8" fill="#FFFFFF"/>
+
+    <!-- Eyebrows (expressive, confident) -->
+    <path d="M168 158 Q180 153 192 160" stroke="url(#hairGrad)" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+    <path d="M208 160 Q220 153 232 158" stroke="url(#hairGrad)" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Stylish Workshop Glasses (Wireframe Amber/Gold) -->
+    <rect x="162" y="159" width="34" height="26" rx="8" fill="none" stroke="url(#brassGrad)" stroke-width="3"/>
+    <rect x="204" y="159" width="34" height="26" rx="8" fill="none" stroke="url(#brassGrad)" stroke-width="3"/>
+    <path d="M196 170 H204" stroke="url(#brassGrad)" stroke-width="3" stroke-linecap="round"/>
+    <path d="M162 168 L146 166" stroke="url(#brassGrad)" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M238 168 L254 166" stroke="url(#brassGrad)" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Glasses lens glare -->
+    <path d="M167 165 L180 163" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="1.8" stroke-linecap="round"/>
+    <path d="M209 165 L222 163" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="1.8" stroke-linecap="round"/>
+
+    <!-- Nose -->
+    <path d="M198 174 V188 C198 192 204 192 205 188" stroke="#EA580C" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+
+    <!-- Friendly Smile -->
+    <path d="M188 200 Q200 208 212 200" stroke="#78350F" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Neat Craft Beard & Mustache -->
+    <path d="M180 195 Q200 192 220 195 Q212 204 200 204 Q188 204 180 195 Z" fill="url(#hairGrad)"/>
+    <path d="M152 185 C150 240 170 258 200 258 C230 258 250 240 248 185 C242 200 238 210 230 220 C220 230 212 232 200 232 C188 232 180 230 170 220 C162 210 158 200 152 185 Z" fill="url(#hairGrad)"/>
+
+    <!-- Pencil tucked behind ear (classic master touch) -->
+    <rect x="242" y="152" width="22" height="4.5" rx="1.5" fill="#EF4444" transform="rotate(-30 242 152)"/>
+    <polygon points="263,140 268,137 265,143" fill="#FDE68A"/>
+    <polygon points="266,138 268,137 267,140" fill="#0F172A"/>
+  </g>
+
+  <!-- Front Tool Accents: Japanese Leather Knife & Python Code Symbol -->
+  <!-- Left Side: Artisan Leather Knife -->
+  <g transform="translate(60, 290) rotate(-18)">
+    <rect x="0" y="0" width="12" height="45" rx="3" fill="url(#leatherGrad)" stroke="#F59E0B" stroke-width="1"/>
+    <path d="M0 45 L12 45 L12 75 L0 60 Z" fill="#CBD5E1" stroke="#94A3B8" stroke-width="1"/>
+    <!-- Blade Shine -->
+    <path d="M3 47 L9 47 L9 68 L3 60 Z" fill="#F8FAFC" fill-opacity="0.7"/>
+    <circle cx="6" cy="15" r="2" fill="url(#brassGrad)"/>
+    <circle cx="6" cy="30" r="2" fill="url(#brassGrad)"/>
+  </g>
+
+  <!-- Right Side: Clean Tech Badge (Terminal & Spark) -->
+  <g transform="translate(290, 285) rotate(15)">
+    <rect x="0" y="0" width="46" height="34" rx="8" fill="#0F172A" stroke="#38BDF8" stroke-width="1.8" stroke-opacity="0.8"/>
+    <!-- Window dots -->
+    <circle cx="8" cy="8" r="2" fill="#EF4444"/>
+    <circle cx="15" cy="8" r="2" fill="#FBBF24"/>
+    <circle cx="22" cy="8" r="2" fill="#10B981"/>
+    <!-- Terminal prompt '>_' -->
+    <path d="M9 18 L16 23 L9 28" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <line x1="20" y1="28" x2="28" y2="28" stroke="#FDE68A" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Bottom Badge: 'MASTER & DEVELOPER' -->
+  <g transform="translate(200, 368)">
+    <rect x="-110" y="-14" width="220" height="28" rx="14" fill="#0F172A" stroke="url(#brassGrad)" stroke-width="1.5"/>
+    <text x="0" y="4" text-anchor="middle" fill="#FDE68A" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" letter-spacing="1.5">N. MURASHKIN • CRAFT &amp; CODE</text>
+  </g>
+</svg>
