@@ -1,0 +1,55 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 837 >>
+stream
+BT
+/F1 16 Tf
+50 780 Td
+(OmniCraft ERP: 7 Hidden Profit Leaks in Spreadsheets) Tj
+/F1 11 Tf
+0 -25 Td
+(Workshop Self-Audit Checklist) Tj
+0 -25 Td
+(1. Formula Range Drift: Verify that SUM and VLOOKUP ranges cover all rows.) Tj
+0 -20 Td
+(2. Static Material Pricing: Check if leather prices match recent batch invoices.) Tj
+0 -20 Td
+(3. Phantom Scrap Loss: Check if cutting yield % is accounted for in patterns.) Tj
+0 -20 Td
+(4. Zero-Cost Chemistry: Ensure thread, cement, and edge paint are expensed.) Tj
+0 -20 Td
+(5. Bench Stockouts: Verify hardware allocation against pipeline orders.) Tj
+0 -20 Td
+(6. Diluted Hourly Rate: Compare real bench hours against estimated labor.) Tj
+0 -20 Td
+(7. Single Account Mixing: Separate client deposits from personal cash flow.) Tj
+0 -30 Td
+(Download desktop software at: https://omnicraft-erp.com) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000001129 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1199
+%%EOF
